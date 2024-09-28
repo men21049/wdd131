@@ -1,0 +1,25 @@
+body{
+    max-width: 640px;
+    margin: 0 auto;
+    color: black;
+}
+
+h2{
+    font-weight: 16px;
+    padding: 7px;
+}
+
+header,main,footer{
+    background-color: #ABBBEE;
+    margin-bottom: 1rem;
+    padding: 5px;
+}
+
+section{
+    background-color: white;
+    border:#ABBBEE solid 3px;
+}
+
+section p{
+    padding: 5px;
+}
