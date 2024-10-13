@@ -1,0 +1,114 @@
+:root {
+    --purple: #3C0A64;
+    --white: #ffffff;
+    --black: #000;
+    --lightgray: #cccccc;
+  }
+
+body{
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    color: var(--white);
+}
+
+h1 {
+	text-align: left;
+	font-family: times, serif;
+	font-size: 1.5rem;
+    font-weight: 400;
+	margin: 1rem;
+    padding: 1rem;
+    color: var(--white);
+}
+
+h2 {
+    font-size: 1.2rem;
+    color: navy;
+    text-align: left;
+    margin: 1rem;
+	}
+
+nav {
+	margin: 1rem auto;
+}
+
+/* small view navigation */
+#menu {
+	font-size: 1.5rem;
+	border: 0;
+	background: none;
+	color: var(--black);
+ 	position: absolute;
+	top:1rem;
+	right:1rem;
+}
+
+#menu::before {
+	content: "☰";
+    color: var(--white);
+}
+
+#menu.open::before {
+	content: "X";
+    color: var(--white);
+}
+header, footer{
+    background-color: var(--purple);
+}
+
+.navigation {
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+	color: var(--white);
+}
+
+.navigation a {
+	display: none;
+	padding: 1rem;
+	text-align: center;
+	text-decoration: none;
+	color: var(--white);
+}
+
+.navigation a:hover {
+	background-color: var(--white);
+    border-radius: 3%;
+	color: var(--purple);
+}
+
+/* when the button is clicked - the open class is toggled (added/removed) */
+.open a {
+	display: block;
+}
+
+main{
+    margin: 0 auto;
+    max-width: 900px;
+}
+
+figure {
+    border: 1px var(--lightgray) solid;
+    padding: 4px;
+  }
+
+figure:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+figcaption{
+    color: var(--purple);
+}
+
+.container {
+    display:grid; 
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    grid-gap: 25px;
+    place-items: center;
+}
+
+.textCenter {
+    text-align: center;
+}

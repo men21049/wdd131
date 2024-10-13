@@ -1,0 +1,51 @@
+/* large view navigation ************************************/
+@media (min-width: 37.5em) {
+
+    :root {
+        --purple: #3C0A64;
+        --white: #ffffff;
+        --black: #000;
+      }
+      
+    header {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	.navigation {
+		justify-content: right;
+		flex-direction: row;
+	}
+	nav a {
+		flex: 1 1 100%;
+	}
+	h1 {
+		font-size: 2.5rem;
+		margin-left: 0;
+		text-align: center;
+	}
+	
+	h2 {
+		font-size: 2rem;
+		text-align: center;
+	}
+
+	#menu {
+		display: none; /* hide hamburger button */
+	}
+
+	nav {
+		flex-direction: row;
+	}
+
+	.navigation a {
+		display: block;
+		flex: 1 1 100%;
+        text-align: right;
+	}
+	
+	.stuff {
+		margin: 1rem auto;
+	}
+}
