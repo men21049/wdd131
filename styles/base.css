@@ -5,7 +5,6 @@
 }
 
 body{
-    font-family: "Sansita", sans-serif;
     max-width: 960px;
     margin: 0 auto;
     font-family: "Open Sans", sans-serif;
@@ -20,7 +19,7 @@ header {
     border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-h1 {
+#course-title {
     font-size: 1rem;
     padding: 15px;
     font-weight: 50;
@@ -79,7 +78,7 @@ main section{
 }
 
 .card h3{
-    background-color: cornflowerblue;
+    background-color: #1d4d72;
     color: #fff;
     text-align: center;
 }

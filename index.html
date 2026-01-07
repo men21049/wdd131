@@ -10,10 +10,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
     <header>
-        <h1 >WDD 131 - Dynamic Web Fundamentals - Juan Carlos Mena Osorio</h1>
+        <span id="course-title">WDD 131 - Dynamic Web Fundamentals - Juan Carlos Mena Osorio</span>
         <nav>
             <ul>
                 <li><a href="https://www.linkedin.com/in/juan-carlos-m-85b20370/">LinkedIn</a></li>
@@ -27,7 +28,7 @@
         <section class="card">
             <h2>About me</h2>
             <h3>My name is Juan Carlos Mena</h3>
-            <img src="images/me.jpg" alt="Pic of Juan Carlos Mena" width="100">
+            <img src="images/juan-carlos-mena.jpg" alt="Pic of Juan Carlos Mena" width="100">
             <p>I was born and raised in Santiago, Chile and I live with my wife and children in Guadalajara, Jalisco Mexico. I am currently working as a Lead Data Engineer at a consulting firm. </p>
 
             <h2>Guadalajara, Jalisco Mexico</h2>
@@ -47,11 +48,10 @@
         </section>
     </main>
     <footer >
-        <p>&copy; 2026 Juan Carlos Mena Osorio Mexico</p>
+        <p><span id="currentyear"></span> Juan Carlos Mena Osorio Mexico</p>
         <p>
             <span id="lastmodified"></span>
         </p>
     </footer>
-    <script src="scripts/getdates.js" defer></script>
 </body>
 </html>
