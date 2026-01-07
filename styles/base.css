@@ -56,6 +56,11 @@ nav a:hover {
     color: yellow;
 }
 
+h1 {
+    text-align: center;
+    margin: 1.5rem;
+}
+
 main{
     display: flex;
     margin-top: 10px;
