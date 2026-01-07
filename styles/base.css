@@ -82,13 +82,13 @@ main section{
     padding: 10px;
 }
 
-.card h3{
+.card h2{
     background-color: #1d4d72;
     color: #fff;
     text-align: center;
 }
 
-.card h2{
+.card h3{
     text-align: center;
     text-decoration: underline;
     margin-top: 1.5rem;
