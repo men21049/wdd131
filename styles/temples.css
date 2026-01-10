@@ -57,14 +57,18 @@ header, footer{
     background-color: var(--purple);
 }
 
-.navigation {
-	display: flex;
-	flex-direction: column;
-	list-style: none;
+nav {
+	margin: 0 auto;
 	color: var(--white);
 }
 
-.navigation a {
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav a {
 	display: none;
 	padding: 1rem;
 	text-align: center;
@@ -72,7 +76,7 @@ header, footer{
 	color: var(--white);
 }
 
-.navigation a:hover {
+nav a:hover {
 	background-color: var(--white);
     border-radius: 3%;
 	color: var(--purple);
