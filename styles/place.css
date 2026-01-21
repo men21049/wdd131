@@ -1,0 +1,127 @@
+:root {
+    --lightblue: #ADD8E6;
+    --green: #008000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 400px;
+    margin: 0 auto;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+}
+
+header, footer {
+    background-color: var(--lightblue);
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.hero{
+    border-top: 20px solid var(--green);
+    border-bottom: 5px solid var(--lightblue);
+}
+
+h2{
+    margin-top: 15px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.cleanH2
+{
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.65);
+    margin: 0 auto;
+    left: 50%;
+    transform: translateX(-50%);
+    color: var(--green);
+    padding: 5px;
+}
+
+#weatherIcon::after{
+    content: "";
+    display: block;
+    width: 100px;
+    height: 100px;
+    background-image: url("../images/weather-svgrepo-com.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 0 auto;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 0 auto; 
+}
+
+tr td:first-child{
+    text-align: right;
+    font-weight: bold;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+
+@media (min-width: 401px) {
+    body{
+        width: 960px;
+        margin: 0 auto;
+        font-family: "Open Sans", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        text-align: center;
+    }
+
+    main{
+        position: relative;
+    }
+
+    h2{
+        padding-top: 15px;
+        padding-bottom: 15px;
+        margin-left: -20px;
+        margin-top: -5px;
+        text-align: center;
+        color: white;
+        background-color: var(--green);
+    }
+
+    .data{
+        position: absolute;
+        top: 100px;
+        left: 80px;
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 10px;
+        border-radius: 5px;
+        text-align: left;
+    }
+
+    .weather{
+        position: absolute;
+        bottom: 100px;
+        right: 80px;
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 10px;
+        border-radius: 5px;
+        text-align: left;
+    }
+
+    #weatherIcon::after{
+        content: "";
+        display: inline-block;
+        margin-left: 10px;
+        width: 30px;
+        height: 30px;
+        background-image: url("../images/meteorology.png");
+    }
+}

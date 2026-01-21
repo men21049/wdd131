@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect"rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Chile</h1>
+    </header>
+    <main>
+        <section class="hero">
+            <h2 class="cleanH2">Santiago</h2>
+            <picture>
+                <source srcset="images/pexels-ale-zuniga-23778342-7410350.webp" type="image/webp" width="400" height="300" media="(max-width: 400px)">
+                <source srcset="images/pexels-ale-zuniga-23778342-7410350_LG.webp" type="image/webp" width="960" height="720" media="(min-width: 401px)">
+                <img src="images/pexels-ale-zuniga-23778342-7410350.webp" alt="Landscape of Chile" width="640" height="480">
+            </picture>
+        </section>
+        <section class="data">
+            <h2>Data</h2>
+            <table>
+                <tbody>
+                    <tr>
+                        <td>Area:</td>
+                        <td>756,102 sq km</td>
+                    </tr>
+                    <tr>
+                        <td>Population:</td>
+                        <td>27,691,018</td>
+                    </tr>
+                    <tr>
+                        <td>Capital:</td>
+                        <td>Santiago de Chile</td>
+                    </tr>
+                    <tr>
+                        <td>Language:</td>
+                        <td>Spanish</td>
+                    </tr>
+                    <tr>
+                        <td>Currency:</td>
+                        <td>Chilean peso</td>
+                    </tr>
+                    <tr>
+                        <td>Time Zone:</td>
+                        <td>UTC-3, UTC-4, UTC-6</td>
+                    </tr>
+                    <tr>
+                        <td>Calling Code:</td>
+                        <td>+56</td>
+                    </tr>
+                    <tr>
+                        <td>Internet TLD:</td>
+                        <td>.cl</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="weather">
+            <h2 id="weatherIcon">Weather</h2>
+            <table>
+                <tbody>
+                    <tr>
+                        <td>Temperature:</td>
+                        <td id="temp">25°C</td>
+                    </tr>
+                    <tr>
+                        <td>Conditions:</td>
+                        <td>Sunny </td>
+                    </tr>
+                    <tr>
+                        <td>Wind:</td>
+                        <td id="windSpeed">3 km/h</td>
+                    </tr>
+                    <tr>
+                        <td>Wind Chill:</td>
+                        <td><span id="windChill"></span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <p><span id="currentyear"></span> Juan Carlos Mena Osorio Mexico</p>
+        <p>
+            <span id="lastmodified"></span>
+        </p>
+    </footer>
+</body>
+</html>
