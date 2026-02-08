@@ -1,0 +1,67 @@
+:root {
+    --skyBlue: #8ECAE6;
+    --blueGreen: #219EBC;
+    --deepSpaceBlue: #023047;
+    --amberFlame: #FFB703;
+    --princetonOrange: #FB8500;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    max-width: 960px;
+    margin: 0 auto;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+}
+
+h2{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-left: -20px;
+    margin-top: -5px;
+    text-align: center;
+    color: var(--deepSpaceBlue);
+}
+
+.color1 {
+    background-color: var(--skyBlue);
+}
+.color2 {
+    background-color: var(--blueGreen);
+}
+.color3 {
+    background-color: var(--deepSpaceBlue);
+    color: white;
+}
+.color4 {
+    background-color: var(--amberFlame);
+}
+.color5 {
+    background-color: var(--princetonOrange);
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.fontH2, .fonth3{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 48px;
+
+}
+.fontP{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 21px;
+}

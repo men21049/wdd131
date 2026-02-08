@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals, Juan Carlos Mena Osorio. This website aims to demostrate best practices for a web form design.">
+    <meta name="author" content="Juan Carlos Mena Osorio">
+    <title>WDD 131 - Dynamic Web Fundamentals - Juan Carlos Mena Osorio</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <script src="scripts/getdates.js" defer></script>
+</head>
+<body>
+    <h1>Product review</h1>
+
+
+    <form action="" method="get">
+        <label for="dropdown">Product Name</label>
+        <select name="dropdown" id="dropdown">
+            <option value="" disabled selected>Select a product</option>
+            <option value="product1">Product 1</option>
+            <option value="product2">Product 2</option>
+            <option value="product3">Product 3</option>
+        </select>
+        <label for="rating">Overall Rating</label>
+        <input type="radio" id="rating" name="rating" value="&star;">&star;
+        <input type="radio" id="rating" name="rating" value="&star;">&star;&star;
+        <input type="radio" id="rating" name="rating" value="&star;">&star;&star;&star;
+        <input type="radio" id="rating" name="rating" value="&star;">&star;&star;&star;&star;
+        <input type="radio" id="rating" name="rating" value="&star;">&star;&star;&star;&star;&star;
+        <label for="date">Date of Installation</label>
+        <input type="date" name="date" id="date">
+        <label for="features">Which features did you find useful in the product? (Check all that apply)</label>
+        <input type="checkbox" name="" id=""> Durability
+        <input type="checkbox" name="" id=""> Ease of Use
+        <input type="checkbox" name="" id=""> Performance
+        <input type="checkbox" name="" id=""> Design
+        <label for="textArea">Written Review (Optional)</label>
+        <textarea name="textArea" id="textArea" cols="30" rows="10"></textarea>
+        <label for="name">Name (Optional)</label>
+        <input type="text" name="name" id="name">
+        <input type="submit" value="Post Review">
+    </form>
+</body>
+</html>
