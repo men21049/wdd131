@@ -6,42 +6,88 @@
     <meta name="description" content="WDD 131 - Dynamic Web Fundamentals, Juan Carlos Mena Osorio. This website aims to demostrate best practices for a web form design.">
     <meta name="author" content="Juan Carlos Mena Osorio">
     <title>WDD 131 - Dynamic Web Fundamentals - Juan Carlos Mena Osorio</title>
-    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/form.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/forms.js"></script>
 </head>
 <body>
-    <h1>Product review</h1>
+    <header>
+        <h1>Product review</h1>
+    </header>
 
+    <main>
+        <form action="" method="get" id="reviewForm" class="wf1">
 
-    <form action="" method="get">
-        <label for="dropdown">Product Name</label>
-        <select name="dropdown" id="dropdown">
-            <option value="" disabled selected>Select a product</option>
-            <option value="product1">Product 1</option>
-            <option value="product2">Product 2</option>
-            <option value="product3">Product 3</option>
-        </select>
-        <label for="rating">Overall Rating</label>
-        <input type="radio" id="rating" name="rating" value="&star;">&star;
-        <input type="radio" id="rating" name="rating" value="&star;">&star;&star;
-        <input type="radio" id="rating" name="rating" value="&star;">&star;&star;&star;
-        <input type="radio" id="rating" name="rating" value="&star;">&star;&star;&star;&star;
-        <input type="radio" id="rating" name="rating" value="&star;">&star;&star;&star;&star;&star;
-        <label for="date">Date of Installation</label>
-        <input type="date" name="date" id="date">
-        <label for="features">Which features did you find useful in the product? (Check all that apply)</label>
-        <input type="checkbox" name="" id=""> Durability
-        <input type="checkbox" name="" id=""> Ease of Use
-        <input type="checkbox" name="" id=""> Performance
-        <input type="checkbox" name="" id=""> Design
-        <label for="textArea">Written Review (Optional)</label>
-        <textarea name="textArea" id="textArea" cols="30" rows="10"></textarea>
-        <label for="name">Name (Optional)</label>
-        <input type="text" name="name" id="name">
-        <input type="submit" value="Post Review">
-    </form>
+            <fieldset>
+                <label for="dropdown">Product Name
+                    <select name="dropdown" id="dropdown" required>
+                        <option value="" disabled selected>Select a product</option>
+                    </select>
+                </label>
+            </fieldset>
+            
+            <fieldset>
+                <label for="rating">Overall Rating
+                    <br>
+                    <label class="rating__stars">&star; <br> 
+                    <input type="radio" id="rating" name="rating" value="1" required></label> 
+
+                    <label class="rating__stars">&star;&star; <br>
+                    <input type="radio" id="rating" name="rating" value="2">
+                    </label> 
+
+                    <label class="rating__stars">&star;&star;&star; <br>
+                    <input type="radio" id="rating" name="rating" value="3">
+                    </label> 
+
+                    <label class="rating__stars">&star;&star;&star;&star; <br>
+                    <input type="radio" id="rating" name="rating" value="4">
+                    </label> 
+
+                    <label class="rating__stars">&star;&star;&star;&star;&star; <br> 
+                    <input type="radio" id="rating" name="rating" value="5">
+                    </label> 
+                    
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <label for="date">Date of Installation
+                    <input type="date" name="date" id="date" required>
+                </label>
+            </fieldset>
+
+            <fieldset>
+            <legend>Which features did you find useful in the product? (Check all that apply)</legend>
+                <label name="features" class="featuresCheck"><input type="checkbox" name="feature" id="durability" required>Durability</label> 
+                <label name="features" class="featuresCheck"><input type="checkbox" name="feature" id="easeofuse">Ease of Use</label>
+                <label name="features" class="featuresCheck"><input type="checkbox" name="feature" id="performance">Performance</label>
+                <label name="features" class="featuresCheck"><input type="checkbox" name="feature" id="design">Design</label>
+            </fieldset>
+            <fieldset>
+                <label for="textArea">Written Review (Optional)
+                <textarea name="textArea" id="textArea" cols="30" rows="10"></textarea>
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <label for="name">Name (Optional)
+                    <input type="text" name="name" id="name">
+                </label>
+            </fieldset>
+
+            <input class="reviewForm" type="submit" value="Post Review">
+        </form>
+
+    </main>
+    <footer>
+        <p><span id="currentyear"></span> Juan Carlos Mena Osorio Mexico</p>
+        <p>
+            <span id="lastmodified"></span>
+        </p>
+    </footer>
 </body>
 </html>

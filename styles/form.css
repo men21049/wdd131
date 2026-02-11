@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    max-width: 960px;
+    margin: 0 auto;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #023047;
+}
+
+main {
+    padding: 20px;
+}
+
+.wf1 {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+
+}
+
+.wf1 label, .wf1 legend{
+    display: block;
+    font-weight: bold;
+    padding: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.wf1 input[type="text"]
+, .wf1 input[type="date"]
+, .wf1 select
+, .wf1 textarea {
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 20rem;
+  padding: 5px;
+  margin: 12px;
+}
+
+.wf1 input[type=checkbox]{
+  vertical-align: middle;
+  position: relative;
+  bottom: 1px;
+}
+
+.wf1 input[type=submit] {
+  width: 100%;
+  background-color: #FB8500;
+  color: white;
+  padding: 14px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.wf1 input[type=submit]:hover {
+  background-color: #FFB703;
+}
+
+.rating__stars {
+  float: left;
+  padding: 0 1em;
+  text-align: center;
+}
+
+label{
+
+}
+
+footer{
+    text-align: center;
+    margin-top: 30px;
+}
