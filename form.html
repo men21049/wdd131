@@ -19,7 +19,7 @@
     </header>
 
     <main>
-        <form id="reviewForm" class="wf1">
+        <form method="get" action="review.html" id="reviewForm" class="wf1">
 
             <fieldset>
                 <label for="dropdown">Product Name
@@ -36,19 +36,19 @@
                     <input type="radio" name="rating" value="1" required></label> 
 
                     <label class="rating__stars">&star;&star; <br>
-                    <input type="radio" name="rating" value="2">
+                    <input type="radio" name="rating" value="2" required>
                     </label> 
 
                     <label class="rating__stars">&star;&star;&star; <br>
-                    <input type="radio" name="rating" value="3">
+                    <input type="radio" name="rating" value="3" required>
                     </label> 
 
                     <label class="rating__stars">&star;&star;&star;&star; <br>
-                    <input type="radio" name="rating" value="4">
+                    <input type="radio" name="rating" value="4" required>
                     </label> 
 
                     <label class="rating__stars">&star;&star;&star;&star;&star; <br> 
-                    <input type="radio" name="rating" value="5">
+                    <input type="radio" name="rating" value="5" required>
                     </label> 
             </fieldset>
 
@@ -60,10 +60,10 @@
 
             <fieldset>
             <legend>Which features did you find useful in the product? (Check all that apply)</legend>
-                <label class="featuresCheck"><input type="checkbox" name="feature" id="durability" required>Durability</label> 
-                <label class="featuresCheck"><input type="checkbox" name="feature" id="easeofuse">Ease of Use</label>
-                <label class="featuresCheck"><input type="checkbox" name="feature" id="performance">Performance</label>
-                <label class="featuresCheck"><input type="checkbox" name="feature" id="design">Design</label>
+                <label class="featuresCheck"><input type="checkbox" name="feature" value="durability" required>Durability</label> 
+                <label class="featuresCheck"><input type="checkbox" name="feature" value="easeofuse" required>Ease of Use</label>
+                <label class="featuresCheck"><input type="checkbox" name="feature" value="performance" required>Performance</label>
+                <label class="featuresCheck"><input type="checkbox" name="feature" value="design" required>Design</label>
             </fieldset>
             <fieldset>
                 <label for="textArea">Written Review (Optional)
