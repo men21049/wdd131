@@ -78,7 +78,7 @@ footer{
     margin-top: 30px;
 }
 
-/* Larger Views ******************************/
+/* Smaller Views ******************************/
 @media (max-width: 640px) {
   main{
       max-width: 500px;
