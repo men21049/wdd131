@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+
 body{
     max-width: 960px;
     margin: 0 auto;
@@ -14,12 +15,13 @@ body{
 }
 
 main {
+    margin: 0 auto;
     padding: 20px;
+    background-color: #f2f2f2;    
 }
 
 .wf1 {
   border-radius: 5px;
-  background-color: #f2f2f2;
   padding: 20px;
 
 }
@@ -47,6 +49,7 @@ main {
   vertical-align: middle;
   position: relative;
   bottom: 1px;
+  margin-right: 10px;
 }
 
 .wf1 input[type=submit] {
@@ -70,11 +73,19 @@ main {
   text-align: center;
 }
 
-label{
-
-}
-
 footer{
     text-align: center;
     margin-top: 30px;
+}
+
+/* Larger Views ******************************/
+@media (max-width: 640px) {
+  main{
+      max-width: 500px;
+      margin: 0 auto;
+      font-family: "Open Sans", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      color: #023047;
+  }
 }
