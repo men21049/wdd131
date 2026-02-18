@@ -1,0 +1,77 @@
+[
+    {
+        "center":[20.61557, -103.34812],
+        "zoom":10,
+        "name":"Business 1",
+        "description":"Mexican Food"
+    },
+    {
+        "center":[20.61597, -103.34882],
+        "zoom":10,
+        "name":"Business 2",
+        "description":"American Food"
+    }
+    ,
+    {
+        "center":[20.61604, -103.34702],
+        "zoom":10,
+        "name":"Business 3",
+        "description":"Chinese Food"
+    }
+    ,
+    {
+        "center":[20.61614, -103.34712],
+        "zoom":10,
+        "name":"Business 4",
+        "description":"Chilean Food"
+    }
+    ,
+    {
+        "center":[20.61622, -103.34702],
+        "zoom":10,
+        "name":"Business 5",
+        "description":"Hardware Store"
+    }
+    ,
+    {
+        "center":[20.61632, -103.34722],
+        "zoom":10,
+        "name":"Business 6",
+        "description":"Movie Theater"
+    }
+    ,
+    {
+        "center":[20.61537, -103.3482],
+        "zoom":10,
+        "name":"Business 7",
+        "description":"Spa"
+    }
+    ,
+    {
+        "center":[20.61527, -103.3482],
+        "zoom":10,
+        "name":"Business 8",
+        "description":"Convinience Store"
+    }
+    ,
+    {
+        "center":[20.61500, -103.34703],
+        "zoom":10,
+        "name":"Business 9",
+        "description":"Italian Food"
+    }
+    ,
+    {
+        "center":[20.61490, -103.34701],
+        "zoom":10,
+        "name":"Business 10",
+        "description":"Office Building"
+    }
+    ,
+    {
+        "center":[20.61480, -103.34699],
+        "zoom":10,
+        "name":"Business 11",
+        "description":"Mayor´s office"
+    }
+]

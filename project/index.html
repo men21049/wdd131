@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals, Juan Carlos Mena Osorio. This website aims to demostrate knowledge on best practices of web design methodologies">
+    <meta name="author" content="Juan Carlos Mena Osorio">
+    <title>NearMeFinder</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+</head>
+<body>
+     <header>
+        <div class="logo">NearMeFinder</div>
+        <nav>
+            <ul class="navHeader"> 
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="./aboutus.html">About Us</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav> 
+    </header>
+    <main>
+        <div class="search-container">
+            <input id="input" type="text" placeholder="Search.." name="search2">
+            <span id="submit"><i class="fa fa-search"></i></span>
+        <br>
+        </div>
+        <div class="hero">
+            <div class="promo">
+                <a href="contact.html"><h3>Business Promotion</h3></a>
+            </div>
+            <div id="map" class="map"></div>
+        </div>
+        
+        <hr class="solid">
+        <div class="results">
+            <div class="card"></div>
+        </div>
+    </main>
+    <footer>
+        <nav>
+            <ul class="navFooter">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="./aboutus.html">About Us</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav> 
+    </footer>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin="" defer></script>
+    <script src="./scripts/createmap.js" defer></script>
+</body>
+</html>
