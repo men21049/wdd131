@@ -24,7 +24,29 @@
         </nav> 
     </header>
     <main>
+        <div>
+            <h3>Contact us</h3>
+            <p>Please fill-out the below form for us to arrange or address your request</p>
+        <form method="get" action="review.html" id="reviewForm" class="wf1">
 
+            <fieldset>
+                <label for="name" > Name:</label>
+                    <input id="name" type="text" required> 
+                <label for="businessName" class="label"> Business Name:</label>
+                    <input id="businessName" type="text" required> 
+                <label for="busDescription" class="label"> Business Description:</label>
+                    <input id="busDescription" type="text" required> 
+                <label for="email" class="label"> email:</label>
+                    <input id="email" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" type="text" required> 
+                <label for="phoneNumber" class="label"> Phone number:</label>
+                    <input id="phoneNumber" type="text" required> 
+                <label for="textArea" class="label"> Other:</label>
+                    <textarea name="textArea" id="textArea" cols="30" rows="10"></textarea>
+            </fieldset>
+
+            <input class="reviewForm" type="submit" value="Request Information">
+        </form>
+        </div>
     </main>
     <footer>
         <nav>

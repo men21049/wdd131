@@ -22,58 +22,26 @@
         <form method="get" action="review.html" id="reviewForm" class="wf1">
 
             <fieldset>
-                <label for="dropdown">Product Name
-                    <select name="dropdown" id="dropdown" required>
-                        <option value="" disabled selected>Select a product</option>
-                    </select>
+                <label class="label"> Name:
+                    <input id="name" type="text" required> 
                 </label>
             </fieldset>
             
             <fieldset>
-                <label>Overall Rating</label>
-                    <br>
-                    <label class="rating__stars">&star; <br> 
-                    <input type="radio" name="rating" id='1' value="1" required></label> 
-
-                    <label class="rating__stars">&star;&star; <br>
-                    <input type="radio" name="rating" id='2' value="2" required>
-                    </label> 
-
-                    <label class="rating__stars">&star;&star;&star; <br>
-                    <input type="radio" name="rating" id='3' value="3" required>
-                    </label> 
-
-                    <label class="rating__stars">&star;&star;&star;&star; <br>
-                    <input type="radio" name="rating" id='4' value="4" required>
-                    </label> 
-
-                    <label class="rating__stars">&star;&star;&star;&star;&star; <br> 
-                    <input type="radio" name="rating" id='5' value="5" required>
-                    </label> 
-            </fieldset>
-
-            <fieldset>
-                <label for="date">Date of Installation
-                    <input type="date" name="date" id="date" required>
+                <label class="label"> Business Name:
+                    <input id="businessName" type="text" required> 
                 </label>
             </fieldset>
 
             <fieldset>
-            <legend>Which features did you find useful in the product? (Check all that apply)</legend>
-                <label class="featuresCheck"><input type="checkbox" name="feature" id='1' value="durability" required>Durability</label> 
-                <label class="featuresCheck"><input type="checkbox" name="feature" id='2' value="easeofuse" required>Ease of Use</label>
-                <label class="featuresCheck"><input type="checkbox" name="feature" id='3' value="performance" required>Performance</label>
-                <label class="featuresCheck"><input type="checkbox" name="feature" id='4' value="design" required>Design</label>
-            </fieldset>
-            <fieldset>
-                <label for="textArea">Written Review (Optional)
-                <textarea name="textArea" id="textArea" cols="30" rows="10"></textarea>
+                <label class="label"> Business Description:
+                    <input id="busDescription" type="text" required> 
                 </label>
             </fieldset>
-
+            
             <fieldset>
-                <label for="name">Name (Optional)
-                    <input type="text" name="name" id="name">
+                <label class="label"> Other:
+                    <textarea name="textArea" id="textArea" cols="30" rows="10"></textarea>
                 </label>
             </fieldset>
 
