@@ -1,8 +1,9 @@
+const search = document.getElementById("submit");
+const results = document.querySelector('.results');
 let mapOptions = {
     center:[20.61547, -103.34702],
     zoom:15
 }
-const search = document.getElementById("submit");
 
 let map;
 let markerGroup;
@@ -49,6 +50,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     drawMap(mapOptions);
     const all = await searchTerm("");
     renderMarkers(all);
+    displayResults(all);
 });
 
 
@@ -56,6 +58,7 @@ search.addEventListener('click', async ()=>{
     const input = document.getElementById("input");
     const result = await searchTerm(input.value); 
     renderMarkers(result);
+    displayResults(result);
 })
 
 async function getData(){
@@ -66,7 +69,6 @@ async function getData(){
     }
     
     const data = await response.json();
-    console.log("Loaded businesses:", data, "Is array?", Array.isArray(data));
     return Array.isArray(data) ? data : Array.isArray(data.businesses) ? data.businesses : [];
   } catch (error) {
     console.error('Error fetching JSON:', error);
@@ -89,4 +91,20 @@ async function searchTerm(text){
     return matches;
 }
 
+function displayResults(matches){
+    
+    document.querySelectorAll('.card').forEach(card=> card.remove());
 
+    matches.forEach(business=>{
+       let businessCard = document.createElement('div');
+       businessCard.classList.add('card');
+       
+       businessCard.innerHTML = `
+            <div class="container">   
+                <h4><b>Business Name: ${business.name}</b></h4> 
+                <p>Description: ${business.description}</p> 
+            </div>`;
+    
+        results.appendChild(businessCard);
+    });
+}
